@@ -1,0 +1,38 @@
+html, body {
+    height: 100%;
+}
+
+img {    
+    width: 50px;
+    height: 50px; 
+      
+}
+.logo { 
+    
+    background-color:red;    
+}
+
+nav {
+    display: flex;
+}
+
+.section {
+    background-color: aqua;    
+    min-height: 100%; 
+    border: 3px solid black;   
+}
+
+.header {
+    background-color:blue;
+    height: 25vh;
+}
+
+.main {
+    background-color:greenyellow;
+    height: 50vh;    
+}
+
+.footer {
+    background-color:green;
+    height: 25vh;
+}
