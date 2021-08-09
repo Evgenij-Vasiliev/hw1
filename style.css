@@ -10,41 +10,29 @@ img {
 
 .header {
     background-color:#126b6a;
-    height: 20vh;
+    min-height: 20vh;
     display: flex;
-    flex-flow: row nowrap;
-    /* justify-content: flex-start; */
+    flex-flow: row nowrap;    /* justify-content: flex-start; */
     align-items: center;   
 }
 
 .menu {
-    flex-grow: 1;
+    flex: 1;    
 }
 
 .menu ul {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    /* margin: 2px 0 0; */
-    /* padding: 0;     */
-    /* font-size: 16px; */
-    /* line-height: 18px; */
+    justify-content: space-around;    
     list-style: none;
 }
 
-.menu li {
-    margin-right: 20px;   
-}
-
-
-.menu a {
-    /* padding: 8px 10px; */
+.menu a {    
     color: #000;
     font-size: 24px;
     text-transform: uppercase;
     font-weight: 900;
     text-decoration: none;
-
 }
 
 .logo {
@@ -53,12 +41,33 @@ img {
 
 .main {
     background-color: #51ede4;
-    height: 60vh;
-   
+    min-height: 60vh; 
+    display: flex;
+    padding: 20px;      
 }
+
 
 .footer {
     background-color: #126b6a;
-    height: 20vh;
-   
+    min-height: 20vh;
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;    
 }
+
+
+.line1, .line2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;           
+}
+
+@media screen and (max-width: 768px) {
+    .line1, .line2, .header, .menu ul {
+        display: block;                   
+    }    
+}
+
+
+
+
