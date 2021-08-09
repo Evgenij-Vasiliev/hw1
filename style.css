@@ -1,5 +1,5 @@
 body {
-   
+    margin: 0;   
     background-color: gray;
 }
 
@@ -13,7 +13,7 @@ img {
     height: 20vh;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
     align-items: center;   
 }
 
@@ -23,57 +23,32 @@ img {
 
 .menu ul {
     display: flex;
-    flex-flow: row nowrap;
-    margin: 2px 0 0;
-    padding: 0;    
-    font-size: 16px;
-    line-height: 18px;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    /* margin: 2px 0 0; */
+    /* padding: 0;     */
+    /* font-size: 16px; */
+    /* line-height: 18px; */
     list-style: none;
 }
 
 .menu li {
-    margin-right: 20px;
+    margin-right: 20px;   
 }
 
-.menu li:last-child {
-    margin-right: 0;
-}
 
 .menu a {
-    padding: 8px 10px;
+    /* padding: 8px 10px; */
     color: #000;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 900;
     text-decoration: none;
-}
 
-.menu a,
-.menu .active {  
-  display: block;
-  padding: 8px 10px;
-  text-transform: uppercase;
-  letter-spacing: .27em;
-  font-weight: 900;
-}
-
-
-.menu .active {
-  color: #fff;
-  background-color: #ff3d00;
-  border-radius: 8px;
 }
 
 .logo {
     margin: 50px;
-}
-
-.tel {
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 24;
-}
-
-.tel a {
-    color: #000;
-    text-decoration: none;
 }
 
 .main {
