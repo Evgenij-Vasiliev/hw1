@@ -1,6 +1,13 @@
 body {
     margin: 0;   
     background-color: gray;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+html {
+    height: 100%;
 }
 
 img {
@@ -9,11 +16,10 @@ img {
 }
 
 .header {
-    background-color:#126b6a;
-    min-height: 20vh;
+    background-color:#126b6a;    
     display: flex;
-    flex-flow: row nowrap;    /* justify-content: flex-start; */
-    align-items: center;   
+    flex-flow: row ;    
+    align-items: center; 
 }
 
 .menu {
@@ -27,7 +33,7 @@ img {
     list-style: none;
 }
 
-.menu a {    
+.menu a, .footer a {    
     color: #000;
     font-size: 24px;
     text-transform: uppercase;
@@ -40,31 +46,33 @@ img {
 }
 
 .main {
-    background-color: #51ede4;
-    min-height: 60vh; 
+    background-color: #51ede4;    
     display: flex;
-    padding: 20px;      
+    padding: 20px; 
+    flex: 1 0 auto;     
 }
-
 
 .footer {
-    background-color: #126b6a;
-    min-height: 20vh;
+    background-color: #126b6a;    
     font-size: 24px;
     font-weight: 900;
-    text-transform: uppercase;    
+    text-transform: uppercase;
+    display: flex; 
+    /* flex-direction: row;      */
+    /* align-items: center;     */
+    flex-wrap: wrap;        
+       
 }
 
-
-.line1, .line2 {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;           
+.footer .text  {
+    display: flex;         
+    justify-content: space-around;
+    flex: 0 0 calc(100% / 3);
 }
 
 @media screen and (max-width: 768px) {
-    .line1, .line2, .header, .menu ul {
-        display: block;                   
+    .footer,  .header, .menu ul {      
+        display: block;                                  
     }    
 }
 
