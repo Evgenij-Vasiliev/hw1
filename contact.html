@@ -12,7 +12,7 @@
         <div class="logo"><a href="#"><img src="./1298712_logo_sketch_icon.png" alt="logo"></a></div>
         <nav class="menu">
             <ul>
-                <li><a href="#">Домашняя</a></li>
+                <li><a href="./index.html">Домашняя</a></li>
                 <li><a href="#" >О нас</a></li>
                 <li><a href="#">Ресурсы</a></li>
                 <li><a href="#">Контакты</a></li>
@@ -31,9 +31,21 @@
         </aside>
         <div class="content">
             <form action="#">
-                <label for="#">Имя</label>
-                <input name="name" type="text">
-                <input type="submit" value="Click">
+                <p><label for="name">Имя</label></p>
+                <p><input  id="name" name="name" type="text" placeholder="Ваше имя"></p>
+                <p><label for="sex">Пол</label></p>                                
+                
+                <input type="radio" name="sex" value="man">Муж
+                <input type="radio" name="sex" value="women">Жен
+                <p><label for="country">Страна</label></p>                
+                <select name="country" id="country">
+                    <option disabled>Выберите страну</option>
+                    <option selected value="Alfa">Альфа Центавра</option>
+                    <option value="Ukraine">Украина</option>
+                    <option value="Belarus">Беларусь</option>
+                </select><br>
+                <p><input type="submit" value="Отправить"></p>
+                        
                 
             </form>
         </div>     
